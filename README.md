@@ -66,8 +66,8 @@ Watch the tutorial on my Youtube channel: TBA
     * **Target State** - Represents the State node this transtion will move the FiniteStateMachine into in case of condition is found true.
     * **Variable Name** - Exact match of variable name to be monitored in the parent State this transition is under. 
     * **Operator** - How you would like this variable to be compared. LESS THAN, EQUAL, MORE THAN.
-    * **Value Type* - What is the type of the variable? Type accepted at this point are: INT, FLOAT. BOOLEAN. (Will add more in the future)
-    * **Value* - Value to compare the variable against.
+    * **Value Type** - What is the type of the variable? Type accepted at this point are: INT, FLOAT. BOOLEAN. (Will add more in the future)
+    * **Value** - Value to compare the variable against.
 
 
 ### Contributing
