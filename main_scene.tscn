@@ -1,0 +1,44 @@
+[gd_scene load_steps=6 format=3 uid="uid://dafpwc5eejvde"]
+
+[ext_resource type="Script" path="res://scripts/fsm/finite_state_machine.gd" id="1_gxarh"]
+[ext_resource type="Script" path="res://main_scene.gd" id="1_ilnp2"]
+[ext_resource type="Script" path="res://scripts/fsm/States/idle_state.gd" id="2_u15s5"]
+[ext_resource type="Script" path="res://scripts/fsm/States/angry_state.gd" id="4_l1f4f"]
+[ext_resource type="Script" path="res://scripts/fsm/transition.gd" id="4_owlrj"]
+
+[node name="MainScene" type="Node2D"]
+script = ExtResource("1_ilnp2")
+
+[node name="Entity" type="ColorRect" parent="."]
+offset_left = 235.0
+offset_top = 302.0
+offset_right = 275.0
+offset_bottom = 342.0
+
+[node name="FiniteStateMachine" type="Node" parent="Entity" node_paths=PackedStringArray("_initial_state")]
+script = ExtResource("1_gxarh")
+_initial_state = NodePath("IdleState")
+
+[node name="IdleState" type="Node" parent="Entity/FiniteStateMachine" node_paths=PackedStringArray("_actor")]
+script = ExtResource("2_u15s5")
+_actor = NodePath("../..")
+
+[node name="ToAngry" type="Node" parent="Entity/FiniteStateMachine/IdleState" node_paths=PackedStringArray("target_state")]
+script = ExtResource("4_owlrj")
+target_state = NodePath("../../AngryState")
+_variable_name = "_timer"
+_operator = 2
+_value_type = 2
+_value = "3"
+
+[node name="AngryState" type="Node" parent="Entity/FiniteStateMachine" node_paths=PackedStringArray("_actor")]
+script = ExtResource("4_l1f4f")
+_actor = NodePath("../..")
+
+[node name="ToIdle" type="Node" parent="Entity/FiniteStateMachine/AngryState" node_paths=PackedStringArray("target_state")]
+script = ExtResource("4_owlrj")
+target_state = NodePath("../../IdleState")
+_variable_name = "_timer"
+_operator = 2
+_value_type = 2
+_value = "3"
