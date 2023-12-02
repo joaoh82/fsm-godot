@@ -48,9 +48,11 @@ If you go through the code you will find most of the well commented, but still, 
 
 ## How to use?
 
-### This project works as a simple example of how to use it. But having a ColorRect code that changes states every 3 seconds controlled by the state machine.
+### This project has a simple example of how to use it. We have a ColorRect node that changes State every 3 seconds controlled by the Finite State Machine.
 
 Watch the tutorial on my Youtube channel: TBA
+
+#### Here are the basic steps to use it:
 
 1. Add an child node of type FiniteStateMachine as a child of node you want to control with state machine. Example: Enemy. (It can be anything really)
 2. Create a new script that inherits from State and give it a class_name, for example `IdleState`
