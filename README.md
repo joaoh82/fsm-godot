@@ -1,5 +1,7 @@
 # Node Based Finite State Machine for Godot
 
+![Example of Finite State Machine](images/image.png)
+
 ## Requirements:
 
 * Godot 4.0 +
@@ -74,7 +76,3 @@ intervene to uphold that code of conduct.
 ### Contact
 
 If you want to contact me you can reach me at <joaoh82@gmail.com>.
-
-### Credits
-
-ADD CREDITS TO ICON
