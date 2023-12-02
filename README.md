@@ -50,10 +50,22 @@ If you go through the code you will find most of the well commented, but still, 
 
 ### This project works as a simple example of how to use it. But having a ColorRect code that changes states every 3 seconds controlled by the state machine.
 
-Watch the tutorial on my Youtube channel: 
+Watch the tutorial on my Youtube channel: TBA
 
 1. Add an child node of type FiniteStateMachine as a child of node you want to control with state machine. Example: Enemy. (It can be anything really)
-
+2. Create a new script that inherits from State and give it a class_name, for example `IdleState`
+3. Overide and implement the necesary methods depending on what your state should do. Accordinly to the above definitions.
+    * If using `func update(_delta : float):`, calling `super.update(_delta)` on top of the method is **mandatory**.
+4. Add a child node of Type YourState, example IdleState as a child of the FiniteStateMachine node. And set the Initial state of the FiniteStateMachine to the newly added State, if this will be your initial state.
+    * Every State has a property called `Check transition interval`, which is the interval in which the condition for every state should be checked. Default to 1 second.
+5. Repeat steps 3 and 4 for every state your Entity needs to have.
+6. For every State you added to the FiniteStateMachine you need now to add a child node of type Transition and name it accordinly. I like to follow the pattern of `ToAttack`, `ToIdle`, meaning to are naming the State the transition will move into in case the condition is found true. But feel free to name it whatever you want.
+7. For every Transition you add you need to fill in the following parameters:
+    * **Target State** - Represents the State node this transtion will move the FiniteStateMachine into in case of condition is found true.
+    * **Variable Name** - Exact match of variable name to be monitored in the parent State this transition is under. 
+    * **Operator** - How you would like this variable to be compared. LESS THAN, EQUAL, MORE THAN.
+    * **Value Type* - What is the type of the variable? Type accepted at this point are: INT, FLOAT. BOOLEAN. (Will add more in the future)
+    * **Value* - Value to compare the variable against.
 
 
 ### Contributing
