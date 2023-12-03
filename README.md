@@ -54,9 +54,11 @@ If you go through the code you will find most of the well commented, but still, 
 
 ### This project has a simple example of how to use it. We have a ColorRect node that changes State every 3 seconds controlled by the Finite State Machine.
 
-Watch the tutorial on my Youtube channel: https://youtu.be/Fex3OQqYUiI
+### Watch the tutorial on my Youtube channel:
 
+<p align="center">
 [<img src="https://github.com/joaoh82/fsm-godot/blob/main/images/Thumbnail.png" width="50%">](https://youtu.be/Fex3OQqYUiI "How I created a Node Based Finite State Machine for my game?")
+</p>
 
 #### Here are the basic steps to use it:
 
