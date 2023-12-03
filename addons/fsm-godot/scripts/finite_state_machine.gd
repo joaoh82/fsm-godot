@@ -1,4 +1,4 @@
-@icon("res://icons/fsm.png")
+@icon("res://addons/fsm-godot/icons/fsm.png")
 extends Node
 class_name FiniteStateMachine
 
@@ -23,6 +23,7 @@ func _process(delta):
 func _physics_process(delta):
 	if _current_state:
 		_current_state.physics_update(delta)
+
 
 ## Change the current state of the State Machine
 func change_state(new_state: State):

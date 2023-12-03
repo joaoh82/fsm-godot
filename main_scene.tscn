@@ -1,10 +1,10 @@
 [gd_scene load_steps=7 format=3 uid="uid://dafpwc5eejvde"]
 
-[ext_resource type="Script" path="res://scripts/fsm/finite_state_machine.gd" id="1_gxarh"]
+[ext_resource type="Script" path="res://addons/fsm-godot/scripts/finite_state_machine.gd" id="1_gxarh"]
 [ext_resource type="Script" path="res://main_scene.gd" id="1_ilnp2"]
 [ext_resource type="Script" path="res://scripts/fsm/States/idle_state.gd" id="2_u15s5"]
 [ext_resource type="Script" path="res://scripts/fsm/States/angry_state.gd" id="4_l1f4f"]
-[ext_resource type="Script" path="res://scripts/fsm/transition.gd" id="4_owlrj"]
+[ext_resource type="Script" path="res://addons/fsm-godot/scripts/transition.gd" id="4_owlrj"]
 [ext_resource type="Script" path="res://scripts/fsm/States/new_idle_state.gd" id="6_7228f"]
 
 [node name="MainScene" type="Node2D"]

@@ -1,4 +1,4 @@
-@icon("res://icons/transition.png")
+@icon("res://addons/fsm-godot/icons/transition.png")
 extends Node
 class_name Transition
 
@@ -11,11 +11,11 @@ enum ValueType {BOOLEAN, INT, FLOAT}
 @export var target_state : State
 @export_category("Condition")
 @export_category("Variable name = EXACT MATCH")
-@export var _variable_name : String
-@export var _operator : OperatorType
-@export var _value_type : ValueType
+@export var _variable_name : String ## Variable name to check
+@export var _operator : OperatorType ## Operator to use for comparison
+@export var _value_type : ValueType ## Type of value to compare
 @export_category("If type is BOOLEAN, value has to be either 'true' or 'false'")
-@export var _value : String
+@export var _value : String ## Value to compare
 
 
 ## Check if condition is true

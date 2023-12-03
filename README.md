@@ -10,18 +10,9 @@
 
 ## How to Setup?
 
-1. Create the `scripts/fsm/` folder if you do not already have one (for organization purposes, in reality could be anywhere in your project).
-2. Clone or download this project folder to your computer.
-3. Copy the following files to the `scripts/fsm/` folder.
-    * `scripts/fsm/finite_state_machine.gd`
-    * `scripts/fsm/state.gd`
-    * `scripts/fsm/transition.gd`
-4. Create the `icons/` folder in the root of your project. If you want the icons customized in the scene tree.
-5. Copy the following files into the `icons/` folder.
-    * `icons/fsm.png`
-    * `icons/state.png`
-    * `icons/transition.png`
-4. Setup is DONE!
+1. If it does not yet exists, create a folder called `addons\` in the root of your project
+2. Copy the `addons\fsm-godot\` to your `addons\` folder in your project
+3. Setup is DONE!
 
 ## Important Definitions
 

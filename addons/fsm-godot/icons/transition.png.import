@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b21oyay2h56c7"
-path="res://.godot/imported/state.png-8c025e430f4d47193640935a59247768.ctex"
+uid="uid://caaq6hkdkjb84"
+path="res://.godot/imported/transition.png-bda19ed0983ea1136bd1efaf9b8df75e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://icons/state.png"
-dest_files=["res://.godot/imported/state.png-8c025e430f4d47193640935a59247768.ctex"]
+source_file="res://addons/fsm-godot/icons/transition.png"
+dest_files=["res://.godot/imported/transition.png-bda19ed0983ea1136bd1efaf9b8df75e.ctex"]
 
 [params]
 

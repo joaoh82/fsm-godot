@@ -1,4 +1,4 @@
-@icon("res://icons/state.png")
+@icon("res://addons/fsm-godot/icons/state.png")
 extends Node
 class_name State
 
@@ -24,11 +24,12 @@ func _ready():
 			_transitions.append(child)
 		
 
-
+## Called when the node enters the scene tree for the first time.
 func enter_state() -> void:
 	pass
 
 
+## Called when the node is about to be removed from the scene tree.
 func exit_state() -> void:
 	pass
 	
