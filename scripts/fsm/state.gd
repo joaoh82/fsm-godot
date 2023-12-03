@@ -23,9 +23,6 @@ func _ready():
 		if child is Transition:
 			_transitions.append(child)
 		
-		
-func _process(delta):
-	pass
 
 
 func enter_state() -> void:

@@ -50,7 +50,7 @@ If you go through the code you will find most of the well commented, but still, 
 
 ### This project has a simple example of how to use it. We have a ColorRect node that changes State every 3 seconds controlled by the Finite State Machine.
 
-Watch the tutorial on my Youtube channel: TBA
+Watch the tutorial on my Youtube channel: https://youtu.be/Fex3OQqYUiI
 
 #### Here are the basic steps to use it:
 
