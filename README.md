@@ -1,5 +1,7 @@
 # Node Based Finite State Machine for Godot
 
+## "Allow an object to alter its behaviour when its internal state changes. The object will appear to change its class"
+
 ![Example of Finite State Machine](images/image.png)
 
 ## Requirements:
@@ -22,6 +24,8 @@
 4. Setup is DONE!
 
 ## Important Definitions
+
+![Finite State Machine Definitions](images/fsm.png)
 
 If you go through the code you will find most of the well commented, but still, here are some important definitions.
 
