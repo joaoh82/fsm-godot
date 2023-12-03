@@ -56,6 +56,8 @@ If you go through the code you will find most of the well commented, but still, 
 
 Watch the tutorial on my Youtube channel: https://youtu.be/Fex3OQqYUiI
 
+[<img src="https://github.com/joaoh82/fsm-godot/blob/main/images/Thumbnail.png" width="50%">](https://youtu.be/Fex3OQqYUiI "How I created a Node Based Finite State Machine for my game?")
+
 #### Here are the basic steps to use it:
 
 1. Add an child node of type FiniteStateMachine as a child of node you want to control with state machine. Example: Enemy. (It can be anything really)
