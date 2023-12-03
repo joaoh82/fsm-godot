@@ -1,5 +1,7 @@
 # Node Based Finite State Machine for Godot
 
+![Scene Tree](images/fsm-scene_tree.png)
+
 ## "Allow an object to alter its behaviour when its internal state changes. The object will appear to change its class"
 
 ![Example of Finite State Machine](images/image.png)
