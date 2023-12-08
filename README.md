@@ -14,7 +14,8 @@
 
 1. If it does not yet exists, create a folder called `addons\` in the root of your project
 2. Copy the `addons\fsm-godot\` to your `addons\` folder in your project
-3. Setup is DONE!
+3. Go to Project -? Project Settings -> Plugins -> And Enable the Plugin
+4. Setup is DONE!
 
 ## Important Definitions
 
